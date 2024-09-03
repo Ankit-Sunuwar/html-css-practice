@@ -16,11 +16,88 @@
     scripts
     styles
     -->
+    <style>
+      table,
+      tr,
+      td {
+        border: 1px solid red;
+      }
+    </style>
   </head>
+
   <body>
-    <h1>Distance Converter</h1>
-    <!-- div vs span -->
-    <div style="background-color: green">I am Div</div>
-    <span style="background-color: yellow">I am Span</span>
+    <!-- Image -->
+    <img
+      src="./distance.png"
+      width="500"
+      height="500"
+      onerror="this.onerror=null;this.src='./hacker.jpeg'"
+      alt="Distance Logo"
+    />
+    <!-- Ancher Tag (Links) -->
+    <a href="https=//google.com" target="_blank">Go to another website</a>
+    <!-- Audio & Video -->
+    <audio controls>
+      <source
+        src="https://www.w3schools.com/html/horse.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <!-- Table -->
+    <table border="1">
+      <tr>
+        <th>S.NO</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Class</th>
+      </tr>
+      <tr>
+        <!--table data(td)-->
+        <td colspan="4" style="text-align: center">No Data</td>
+      </tr>
+    </table>
+    <!-- Ordered List vs Unordered list  -->
+    <ol>
+      <li>Ankit</li>
+      <li>Kabita</li>
+    </ol>
+    <ul>
+      <li>Tara</li>
+      <ul>
+        <li>Test</li>
+      </ul>
+      <li>Sunuwar</li>
+    </ul>
+
+    <!-- Forms 
+    text
+    number
+    radio, // yes ma dot hunxa.  (gneder m, f, o) || name bhanni cheej radio ma imp xa.
+    checkbox, // yes ma square hunxa (what do you like to drink? coffee milk tea)
+    password
+    email
+    date
+    select
+     -->
+    <form>
+      <input type="text" />
+      <input type="number" />
+
+      <input type="radio" name="gender" value="m" />
+      <label>Male</label>
+      <input type="radio" name="gender" value="f" />
+      <label>Female</label>
+      <input type="radio" name="gender" value="o" />
+      <label>Others</label>
+
+      <input type="checkbox" name="drink" />
+      <label>Coffee</label>
+      <input type="checkbox" name="drink" />
+      <label>Tea</label>
+
+      <input type="password" />
+      <input type="email" />
+      <input type="date" />
+    </form>
   </body>
 </html>
