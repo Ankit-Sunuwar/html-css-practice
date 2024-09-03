@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distance Converter</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label>Enter Value</label> <input placeholder="Eg: 1" id="kmValue" />
+        <select id="firstDropdown" onchange="converter(); return false;">
+          <option value="km">km</option>
+          <option value="m">m</option>
+        </select>
+      </div>
+      <div>
+        <label>Converted Value</label>
+        <input placeholder="Eg: 1000" id="mValue" />
+        <select id="secondDropdown" onchange="converter(); return false;">
+          <option value="km">km</option>
+          <option value="m">m</option>
+        </select>
+      </div>
+      <button type="button" onclick="converter(); return false;">
+        Convert
+      </button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>
