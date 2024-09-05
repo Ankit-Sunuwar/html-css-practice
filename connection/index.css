@@ -1,0 +1,56 @@
+/* id */
+
+/* #kmValue {
+  color: green;
+  background-color: red;
+} */
+
+/* global css variable */
+* {
+  font-family: "SUSE", "Times New Roman", Times, serif;
+}
+
+/* local scope css variable */
+
+/* body,
+form,
+div {
+  background-color: red;
+  margin: 2px;
+  padding: 20px;
+} */
+
+label:before {
+  content: "\a";
+  white-space: pre;
+  padding: 2px;
+}
+/* pseudo class */
+a:visited {
+  color: gray;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  border: 1px solid #000000;
+  margin: 2px;
+  box-sizing: border-box;
+}
+
+textarea:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:invalid {
+  box-shadow: 0 0 1px 1px red;
+}
+
+textarea:focus:invalid {
+  box-shadow: none;
+}
+
+.msg {
+  margin: 10px 0;
+}
